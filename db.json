@@ -6,9 +6,9 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1,
-      "type": "cliente",
-      "activeServices": [],
-      "doneServices": []
+      "type": "cliente"
     }
-  ]
+  ],
+  "activeServices": [],
+  "doneServices": []
 }

@@ -12,6 +12,8 @@ const rules = auth.rewriter({
   users: 600,
   home: 664,
   profile: 600,
+  activeServices: 640,
+  doneServices: 640,
 });
 
 app.use(cors());
