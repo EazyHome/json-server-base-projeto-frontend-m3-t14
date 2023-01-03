@@ -20,9 +20,10 @@ TYPE: CLIENTE
     "email": "exemplo@mail.com",
     "password": "exemplo",
     "name": "Exemplo",
-    "city": "Rio de Janeiro",
+    "city": "Rio de Janeiro - RJ",
     "age": 18,
-    "type": "cliente"
+    "type": "cliente",
+    "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
 
@@ -33,9 +34,9 @@ TYPE: PRESTADOR
 		"email": "prestador@mail.com",
 		"name": "Prestador",
 	    "workOnCities": [
-		    "Rio de Janeiro",
-		    "Angra dos Reis",
-		    "Cabo Frio"
+		    "Rio de Janeiro - RJ",
+		    "Angra dos Reis - RJ",
+		    "Cabo Frio - RJ"
 	    ],
         "workOnCategories": [
             "Estrutural - Telhado",
@@ -44,6 +45,7 @@ TYPE: PRESTADOR
         ],
 	    "age": 50,
 		"type": "prestador",
+        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
 </pre>
@@ -59,9 +61,10 @@ TYPE: CLIENTE
         "email": "exemplo@mail.com",
         "name": "Exemplo",
         "age": 18,
-        "city": "Rio de Janeiro",
+        "city": "Rio de Janeiro - RJ",
         "type": "cliente",
-        "id": 1
+        "id": 1,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
     }
 }
 </pre>
@@ -75,9 +78,9 @@ TYPE: PRESTADOR
 		"email": "prestador@mail.com",
 		"name": "Prestador",
 	    "workOnCities": [
-		    "Rio de Janeiro",
-		    "Angra dos Reis",
-		    "Cabo Frio"
+		    "Rio de Janeiro - RJ",
+		    "Angra dos Reis - RJ",
+		    "Cabo Frio - RJ"
 	    ],
         "workOnCategories": [
             "Estrutural - Telhado",
@@ -86,7 +89,9 @@ TYPE: PRESTADOR
         ],
 	    "age": 50,
 		"type": "prestador",
-		"id": 2
+        "ratings" : [],
+		"id": 2,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
 </pre>
@@ -118,10 +123,11 @@ TYPE: CLIENTE
     "user": {
         "email": "exemplo@mail.com",
         "name": "Exemplo",
-        "city": "Rio de Janeiro",
+        "city": "Rio de Janeiro - RJ",
         "age": 18,
         "type": "cliente",
-        "id": 1
+        "id": 1,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
     }
 }
 </pre>
@@ -135,9 +141,9 @@ TYPE: PRESTADOR
 		"email": "prestador@mail.com",
 		"name": "Prestador",
 	    "workOnCities": [
-		    "Rio de Janeiro",
-		    "Angra dos Reis",
-		    "Cabo Frio"
+		    "Rio de Janeiro - RJ",
+		    "Angra dos Reis - RJ",
+		    "Cabo Frio - RJ"
 	    ],
         "workOnCategories": [
             "Estrutural - Telhado",
@@ -146,7 +152,9 @@ TYPE: PRESTADOR
         ],
 	    "age": 50,
 		"type": "prestador",
-		"id": 2
+        "ratings": [],
+		"id": 2,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
 </pre>
@@ -177,9 +185,10 @@ TYPE: CLIENTE
     "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
     "name": "Exemplo",
     "age": 18,
-    "city": "Rio de Janeiro",
+    "city": "Rio de Janeiro - RJ",
     "id": 1,
-    "type": "cliente"
+    "type": "cliente",
+    "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
 
@@ -191,9 +200,9 @@ TYPE: PRESTADOR
 	"password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
 	"name": "Prestador",
 	"workOnCities": [
-		"Rio de Janeiro",
-		"Angra dos Reis",
-		"Cabo Frio"
+		"Rio de Janeiro - RJ",
+		"Angra dos Reis - RJ",
+		"Cabo Frio - RJ"
 	],
     "workOnCategories": [
         "Estrutural - Telhado",
@@ -202,7 +211,9 @@ TYPE: PRESTADOR
     ],
 	"age": 50,
 	"type": "prestador",
-	"id": 2
+    "ratings": [],
+	"id": 2,
+    "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
 
@@ -225,9 +236,10 @@ RESPOSTA DA API - STATUS 200
 		"name": "Troca de caixa de fusíveis",
 		"type": "Elétrica",
 		"description": "Substituição da caixa e fiação dos fusíveis da casa",
-        "serviceCity": "Rio de Janeiro"
+        "serviceCity": "Rio de Janeiro - RJ"
 		"userId": 1,
-		"providerId": 2
+		"providerId": 2,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 ]
 </pre>
@@ -251,9 +263,10 @@ RESPOSTA DA API - STATUS 200
 		"name": "Conserto de Telhado",
 		"type": "Estrutural",
 		"description": "Substituição de telhas quebradas",
-        "serviceCity": "Rio de Janeiro"
+        "serviceCity": "Rio de Janeiro - RJ"
 		"userId": 1,
-		"providerId": 2
+		"providerId": 2,
+        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 ]
 </pre>
