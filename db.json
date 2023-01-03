@@ -5,7 +5,8 @@
       "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
       "name": "Kenzinho",
       "age": 38,
-      "city": "São Paulo - SP",
+      "city": "São Paulo",
+      "state": "SP",
       "id": 1,
       "type": "cliente",
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg"
@@ -14,11 +15,8 @@
       "email": "prestador@mail.com",
       "password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
       "name": "Prestador",
-      "workOnCities": [
-        "São Paulo - SP",
-        "Sorocaba - SP",
-        "São José dos Campos - SP"
-      ],
+      "state": "SP",
+      "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
       "workOnCategories": [
         "Estrutural - Telhado",
         "Elétrica",
@@ -29,15 +27,27 @@
       "type": "prestador",
       "id": 2,
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg"
+    },
+    {
+      "email": "kenzao@mail.com",
+      "password": "$2a$10$BrqES1iF52WdAPrazfRdhuSsuizJD/M0k4O1q0daW8ujAG96.Kmeu",
+      "name": "Kenzão",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "age": 45,
+      "type": "cliente",
+      "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg",
+      "id": 3
     }
   ],
   "activeServices": [
     {
-      "id": 2,
+      "id": 3,
       "name": "Conserto de Telhado",
       "type": "Estrutural - Telhado",
       "description": "Substituição de telhas quebradas",
-      "serviceCity": "São Paulo - SP",
+      "serviceCity": "São Paulo",
+      "serviceState": "SP",
       "userId": 1,
       "providerId": 2
     }
@@ -48,8 +58,19 @@
       "name": "Troca de caixa de fusíveis",
       "type": "Elétrica",
       "description": "Substituição da caixa e fiação dos fusíveis da casa",
-      "serviceCity": "São Paulo - SP",
+      "serviceCity": "São Paulo",
+      "serviceState": "SP",
       "userId": 1,
+      "providerId": 2
+    },
+    {
+      "id": 2,
+      "name": "Manutenção de bomba de piscina",
+      "type": "Hidráulica - Piscina",
+      "description": "Manutenção e Limpeza de Bomba de Piscina",
+      "serviceCity": "São Paulo",
+      "serviceState": "SP",
+      "userId": 3,
       "providerId": 2
     }
   ]
