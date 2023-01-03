@@ -37,6 +37,11 @@ TYPE: PRESTADOR
 		    "Angra dos Reis",
 		    "Cabo Frio"
 	    ],
+        "workOnCategories": [
+            "Estrutural - Telhado",
+            "Elétrica",
+            "Hidráulica - Piscina"
+        ],
 	    "age": 50,
 		"type": "prestador",
 	}
@@ -74,6 +79,11 @@ TYPE: PRESTADOR
 		    "Angra dos Reis",
 		    "Cabo Frio"
 	    ],
+        "workOnCategories": [
+            "Estrutural - Telhado",
+            "Elétrica",
+            "Hidráulica - Piscina"
+        ],
 	    "age": 50,
 		"type": "prestador",
 		"id": 2
@@ -129,6 +139,11 @@ TYPE: PRESTADOR
 		    "Angra dos Reis",
 		    "Cabo Frio"
 	    ],
+        "workOnCategories": [
+            "Estrutural - Telhado",
+            "Elétrica",
+            "Hidráulica - Piscina"
+        ],
 	    "age": 50,
 		"type": "prestador",
 		"id": 2
@@ -180,6 +195,11 @@ TYPE: PRESTADOR
 		"Angra dos Reis",
 		"Cabo Frio"
 	],
+    "workOnCategories": [
+        "Estrutural - Telhado",
+        "Elétrica",
+        "Hidráulica - Piscina"
+    ],
 	"age": 50,
 	"type": "prestador",
 	"id": 2
