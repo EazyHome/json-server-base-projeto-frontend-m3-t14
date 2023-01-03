@@ -10,32 +10,74 @@ A API tem 5 Endpoints, podendo cadastrar usuários, realizar login, acessar o pe
 
 POST /register - FORMATO DA REQUISIÇÃO
 
+A chave "type" será preenchida de acordo com o formulário de registro utilizado na página (cliente ou prestador).
+
+TYPE: CLIENTE
+
 <pre>
 
 {
     "email": "exemplo@mail.com",
     "password": "exemplo",
     "name": "Exemplo",
+    "city": "Rio de Janeiro",
     "age": 18,
     "type": "cliente"
 }
 </pre>
 
-A chave "type" será preenchida de acordo com o formulário de registro utilizado na página (cliente ou prestador).
+TYPE: PRESTADOR
+
+<pre>
+{
+		"email": "prestador@mail.com",
+		"name": "Prestador",
+	    "workOnCities": [
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
+	    ],
+	    "age": 50,
+		"type": "prestador",
+	}
+}
+</pre>
 
 RESPOSTA DA API - STATUS 201
 
-<pre>
+TYPE: CLIENTE
 
+<pre>
 {
     "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlbGlwcGVAbWFpbC5jb20iLCJpYXQiOjE2NzI2OTc3MjAsImV4cCI6MTY3MjcwMTMyMCwic3ViIjoiMiJ9. 9oQnDT5eN4Ib5rHqxz0BCbMRHYCYyc3euvuI28lb0WQ",
     "user": {
         "email": "exemplo@mail.com",
         "name": "Exemplo",
         "age": 18,
+        "city": "Rio de Janeiro",
         "type": "cliente",
         "id": 1
     }
+}
+</pre>
+
+TYPE: PRESTADOR
+
+<pre>
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZXN0YWRvckBtYWlsLmNvbSIsImlhdCI6MTY3Mjc0OTc1MCwiZXhwIjoxNjcyNzUzMzUwLCJzdWIiOiIyIn0.evzUeesNig504rVW9CVKBIrG7r1PaPUigBHWwe8uBJQ",
+	"user": {
+		"email": "prestador@mail.com",
+		"name": "Prestador",
+	    "workOnCities": [
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
+	    ],
+	    "age": 50,
+		"type": "prestador",
+		"id": 2
+	}
 }
 </pre>
 
@@ -58,16 +100,39 @@ POST /login - FORMATO DA REQUISIÇÃO
 
 RESPOSTA DA API - STATUS 200
 
+TYPE: CLIENTE
+
 <pre>
 {
     "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZlbGlwcGVAbWFpbC5jb20iLCJpYXQiOjE2NzI2OTc3MjAsImV4cCI6MTY3MjcwMTMyMCwic3ViIjoiMiJ9.9oQnDT5eN4Ib5rHqxz0BCbMRHYCYyc3euvuI28lb0WQ",
     "user": {
         "email": "exemplo@mail.com",
         "name": "Exemplo",
+        "city": "Rio de Janeiro",
         "age": 18,
         "type": "cliente",
         "id": 1
     }
+}
+</pre>
+
+TYPE: PRESTADOR
+
+<pre>
+{
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZXN0YWRvckBtYWlsLmNvbSIsImlhdCI6MTY3Mjc0OTc1MCwiZXhwIjoxNjcyNzUzMzUwLCJzdWIiOiIyIn0.evzUeesNig504rVW9CVKBIrG7r1PaPUigBHWwe8uBJQ",
+	"user": {
+		"email": "prestador@mail.com",
+		"name": "Prestador",
+	    "workOnCities": [
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
+	    ],
+	    "age": 50,
+		"type": "prestador",
+		"id": 2
+	}
 }
 </pre>
 
@@ -89,14 +154,35 @@ GET /users/"id do usuário" - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICA�
 
 RESPOSTA DA API - STATUS 200
 
+TYPE: CLIENTE
+
 <pre>
 {
     "email": "exemplo@mail.com",
     "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
     "name": "Exemplo",
     "age": 18,
+    "city": "Rio de Janeiro",
     "id": 1,
     "type": "cliente"
+}
+</pre>
+
+TYPE: PRESTADOR
+
+<pre>
+{
+	"email": "prestador@mail.com",
+	"password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
+	"name": "Prestador",
+	"workOnCities": [
+		"Rio de Janeiro",
+		"Angra dos Reis",
+		"Cabo Frio"
+	],
+	"age": 50,
+	"type": "prestador",
+	"id": 2
 }
 </pre>
 
@@ -119,6 +205,7 @@ RESPOSTA DA API - STATUS 200
 		"name": "Troca de caixa de fusíveis",
 		"type": "Elétrica",
 		"description": "Substituição da caixa e fiação dos fusíveis da casa",
+        "serviceCity": "Rio de Janeiro"
 		"userId": 1,
 		"providerId": 2
 	}
@@ -144,6 +231,7 @@ RESPOSTA DA API - STATUS 200
 		"name": "Conserto de Telhado",
 		"type": "Estrutural",
 		"description": "Substituição de telhas quebradas",
+        "serviceCity": "Rio de Janeiro"
 		"userId": 1,
 		"providerId": 2
 	}
