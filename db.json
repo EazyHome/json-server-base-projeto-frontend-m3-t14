@@ -5,15 +5,20 @@
       "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
       "name": "Kenzinho",
       "age": 38,
-      "city": "São Paulo",
+      "city": "São Paulo - SP",
       "id": 1,
-      "type": "cliente"
+      "type": "cliente",
+      "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg"
     },
     {
       "email": "prestador@mail.com",
       "password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
       "name": "Prestador",
-      "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
+      "workOnCities": [
+        "São Paulo - SP",
+        "Sorocaba - SP",
+        "São José dos Campos - SP"
+      ],
       "workOnCategories": [
         "Estrutural - Telhado",
         "Elétrica",
@@ -21,7 +26,8 @@
       ],
       "age": 52,
       "type": "prestador",
-      "id": 2
+      "id": 2,
+      "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg"
     }
   ],
   "activeServices": [
@@ -30,7 +36,7 @@
       "name": "Conserto de Telhado",
       "type": "Estrutural - Telhado",
       "description": "Substituição de telhas quebradas",
-      "serviceCity": "São Paulo",
+      "serviceCity": "São Paulo - SP",
       "userId": 1,
       "providerId": 2
     }
@@ -41,7 +47,7 @@
       "name": "Troca de caixa de fusíveis",
       "type": "Elétrica",
       "description": "Substituição da caixa e fiação dos fusíveis da casa",
-      "serviceCity": "São Paulo",
+      "serviceCity": "São Paulo - SP",
       "userId": 1,
       "providerId": 2
     }
