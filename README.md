@@ -4,7 +4,7 @@ Esta é a API da EazyHome. O objetivo da aplicação é conectar clientes e pres
 
 ## Endpoints
 
-A API tem 3 Endpoints, podendo cadastrar usuários, realizar login, e acessar o perfil do usuário, seja ele cliente ou prestador.
+A API tem 5 Endpoints, podendo cadastrar usuários, realizar login, acessar o perfil do usuário, seja ele cliente ou prestador, além de acessar os serviços já prestados ou em prestação.
 
 ### Cadastro
 
