@@ -7,8 +7,34 @@
       "age": 38,
       "id": 1,
       "type": "cliente"
+    },
+    {
+      "email": "prestador@mail.com",
+      "password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
+      "name": "Prestador",
+      "age": 52,
+      "type": "prestador",
+      "id": 2
     }
   ],
-  "activeServices": [],
-  "doneServices": []
+  "activeServices": [
+    {
+      "id": 2,
+      "name": "Conserto de Telhado",
+      "type": "Estrutural",
+      "description": "Substituição de telhas quebradas",
+      "userId": 1,
+      "providerId": 2
+    }
+  ],
+  "doneServices": [
+    {
+      "id": 1,
+      "name": "Troca de caixa de fusíveis",
+      "type": "Elétrica",
+      "description": "Substituição da caixa e fiação dos fusíveis da casa",
+      "userId": 1,
+      "providerId": 2
+    }
+  ]
 }

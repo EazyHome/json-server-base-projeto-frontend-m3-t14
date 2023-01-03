@@ -17,13 +17,11 @@ POST /register - FORMATO DA REQUISIÇÃO
     "password": "exemplo",
     "name": "Exemplo",
     "age": 18,
-    "type": "cliente",
-    "activeServices": [],
-    "doneServices": []
+    "type": "cliente"
 }
 </pre>
 
-A chave "type" será preenchida de acordo com o formulário de registro utilizado na página (cliente ou prestador), enquanto as chaves "activeServices" e "doneServices" devem ser sempre inicializadas como arrays vazios.
+A chave "type" será preenchida de acordo com o formulário de registro utilizado na página (cliente ou prestador).
 
 RESPOSTA DA API - STATUS 201
 
@@ -36,8 +34,6 @@ RESPOSTA DA API - STATUS 201
         "name": "Exemplo",
         "age": 18,
         "type": "cliente",
-        "activeServices": [],
-        "doneServices": [],
         "id": 1
     }
 }
@@ -70,8 +66,6 @@ RESPOSTA DA API - STATUS 200
         "name": "Exemplo",
         "age": 18,
         "type": "cliente",
-        "activeServices": [],
-        "doneServices": [],
         "id": 1
     }
 }
@@ -102,14 +96,62 @@ RESPOSTA DA API - STATUS 200
     "name": "Exemplo",
     "age": 18,
     "id": 1,
-    "type": "cliente",
-    "activeServices": [],
-    "doneServices": []
+    "type": "cliente"
 }
 </pre>
 
 ERRO - STATUS 401 - SEM TOKEN DE ACESSO
 
 <pre>
-"Missing Token"
+"Missing token"
+</pre>
+
+### Serviços Finalizados
+
+GET /doneServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+
+RESPOSTA DA API - STATUS 200
+
+<pre>
+[
+	{
+		"id": 1,
+		"name": "Troca de caixa de fusíveis",
+		"type": "Elétrica",
+		"description": "Substituição da caixa e fiação dos fusíveis da casa",
+		"userId": 1,
+		"providerId": 2
+	}
+]
+</pre>
+
+ERRO - STATUS 401 - SEM TOKEN DE ACESSO
+
+<pre>
+"Missing token"
+</pre>
+
+### Serviços Ativos
+
+GET /activeServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+
+RESPOSTA DA API - STATUS 200
+
+<pre>
+[
+	{
+		"id": 2,
+		"name": "Conserto de Telhado",
+		"type": "Estrutural",
+		"description": "Substituição de telhas quebradas",
+		"userId": 1,
+		"providerId": 2
+	}
+]
+</pre>
+
+ERRO - STATUS 401 - SEM TOKEN DE ACESSO
+
+<pre>
+"Missing token"
 </pre>
