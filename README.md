@@ -22,6 +22,7 @@ TYPE: CLIENTE
     "name": "Exemplo",
     "city": "Rio de Janeiro - RJ",
     "age": 18,
+    "phone": "(21) 91234-5678",
     "type": "cliente",
     "avatar_URL": "https://imagemDeExemplo.jpg"
 }
@@ -44,6 +45,7 @@ TYPE: PRESTADOR
             "Hidráulica - Piscina"
         ],
 	    "age": 50,
+        "phone": "(21) 91234-5678",
 		"type": "prestador",
         "avaiable": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
@@ -63,6 +65,7 @@ TYPE: CLIENTE
         "name": "Exemplo",
         "age": 18,
         "city": "Rio de Janeiro - RJ",
+        "phone": "(21) 91234-5678",
         "type": "cliente",
         "id": 1,
         "avatar_URL": "https://imagemDeExemplo.jpg"
@@ -89,6 +92,7 @@ TYPE: PRESTADOR
             "Hidráulica - Piscina"
         ],
 	    "age": 50,
+        "phone": "(21) 91234-5678",
 		"type": "prestador",
         "ratings" : [],
 		"id": 2,
@@ -127,6 +131,7 @@ TYPE: CLIENTE
         "name": "Exemplo",
         "city": "Rio de Janeiro - RJ",
         "age": 18,
+        "phone": "(21) 91234-5678",
         "type": "cliente",
         "id": 1,
         "avatar_URL": "https://imagemDeExemplo.jpg"
@@ -153,6 +158,7 @@ TYPE: PRESTADOR
             "Hidráulica - Piscina"
         ],
 	    "age": 50,
+        "phone": "(21) 91234-5678",
 		"type": "prestador",
         "ratings": [],
 		"id": 2,
@@ -189,6 +195,7 @@ TYPE: CLIENTE
     "name": "Exemplo",
     "age": 18,
     "city": "Rio de Janeiro - RJ",
+    "phone": "(21) 91234-5678",
     "id": 1,
     "type": "cliente",
     "avatar_URL": "https://imagemDeExemplo.jpg"
@@ -213,6 +220,7 @@ TYPE: PRESTADOR
         "Hidráulica - Piscina"
     ],
 	"age": 50,
+    "phone": "(21) 91234-5678",
 	"type": "prestador",
     "ratings": [],
 	"id": 2,

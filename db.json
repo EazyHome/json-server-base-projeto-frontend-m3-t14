@@ -7,6 +7,7 @@
       "age": 38,
       "city": "São Paulo",
       "state": "SP",
+      "phone": "(11) 91234-5678",
       "id": 1,
       "type": "cliente",
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg"
@@ -16,6 +17,7 @@
       "password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
       "name": "Prestador",
       "state": "SP",
+      "phone": "(11) 91234-5678",
       "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
       "workOnCategories": [
         "Estrutural - Telhado",
@@ -35,6 +37,7 @@
       "name": "Kenzão",
       "city": "Rio de Janeiro",
       "state": "RJ",
+      "phone": "(21) 91234-5678",
       "age": 45,
       "type": "cliente",
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg",
