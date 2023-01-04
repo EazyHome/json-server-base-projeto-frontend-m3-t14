@@ -11,7 +11,7 @@ app.db = router.db;
 const rules = auth.rewriter({
   users: 600,
   home: 664,
-  activeServices: 440,
+  activeServices: 600,
   doneServices: 440,
 });
 
