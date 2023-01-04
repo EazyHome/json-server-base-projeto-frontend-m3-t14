@@ -45,6 +45,7 @@ TYPE: PRESTADOR
         ],
 	    "age": 50,
 		"type": "prestador",
+        "avaiable": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -91,6 +92,7 @@ TYPE: PRESTADOR
 		"type": "prestador",
         "ratings" : [],
 		"id": 2,
+        "avaiable": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -154,6 +156,7 @@ TYPE: PRESTADOR
 		"type": "prestador",
         "ratings": [],
 		"id": 2,
+        "avaiable": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -213,6 +216,7 @@ TYPE: PRESTADOR
 	"type": "prestador",
     "ratings": [],
 	"id": 2,
+    "avaiable": true,
     "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
