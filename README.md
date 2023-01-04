@@ -47,7 +47,7 @@ TYPE: PRESTADOR
 	    "age": 50,
         "phone": "(21) 91234-5678",
 		"type": "prestador",
-        "avaiable": true,
+        "available": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -96,7 +96,7 @@ TYPE: PRESTADOR
 		"type": "prestador",
         "ratings" : [],
 		"id": 2,
-        "avaiable": true,
+        "available": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -162,7 +162,7 @@ TYPE: PRESTADOR
 		"type": "prestador",
         "ratings": [],
 		"id": 2,
-        "avaiable": true,
+        "available": true,
         "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
@@ -224,7 +224,7 @@ TYPE: PRESTADOR
 	"type": "prestador",
     "ratings": [],
 	"id": 2,
-    "avaiable": true,
+    "available": true,
     "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
