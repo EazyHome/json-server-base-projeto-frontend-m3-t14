@@ -4,7 +4,7 @@ Esta é a API da EazyHome. O objetivo da aplicação é conectar clientes e pres
 
 ## Endpoints
 
-A API tem 5 Endpoints, podendo cadastrar usuários, realizar login, acessar o perfil do usuário, seja ele cliente ou prestador, além de acessar os serviços já prestados ou em prestação.
+A API tem 6 Endpoints, podendo cadastrar usuários, realizar login, acessar o perfil do usuário, seja ele cliente ou prestador, além de acessar os serviços já prestados ou em prestação.
 
 ### Cadastro
 
@@ -20,7 +20,8 @@ TYPE: CLIENTE
     "email": "exemplo@mail.com",
     "password": "exemplo",
     "name": "Exemplo",
-    "city": "Rio de Janeiro - RJ",
+    "state: "RJ",
+    "city": "Rio de Janeiro",
     "age": 18,
     "phone": "(21) 91234-5678",
     "type": "cliente",
@@ -34,15 +35,14 @@ TYPE: PRESTADOR
 {
 		"email": "prestador@mail.com",
 		"name": "Prestador",
+        "state": "RJ",
 	    "workOnCities": [
-		    "Rio de Janeiro - RJ",
-		    "Angra dos Reis - RJ",
-		    "Cabo Frio - RJ"
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
 	    ],
         "workOnCategories": [
-            "Estrutural - Telhado",
-            "Elétrica",
-            "Hidráulica - Piscina"
+            "Telhado",
         ],
 	    "age": 50,
         "phone": "(21) 91234-5678",
@@ -64,7 +64,8 @@ TYPE: CLIENTE
         "email": "exemplo@mail.com",
         "name": "Exemplo",
         "age": 18,
-        "city": "Rio de Janeiro - RJ",
+        "state": "RJ",
+        "city": "Rio de Janeiro",
         "phone": "(21) 91234-5678",
         "type": "cliente",
         "id": 1,
@@ -81,15 +82,14 @@ TYPE: PRESTADOR
 	"user": {
 		"email": "prestador@mail.com",
 		"name": "Prestador",
+        "state": "RJ",
 	    "workOnCities": [
-		    "Rio de Janeiro - RJ",
-		    "Angra dos Reis - RJ",
-		    "Cabo Frio - RJ"
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
 	    ],
         "workOnCategories": [
-            "Estrutural - Telhado",
-            "Elétrica",
-            "Hidráulica - Piscina"
+            "Telhado",
         ],
 	    "age": 50,
         "phone": "(21) 91234-5678",
@@ -129,7 +129,8 @@ TYPE: CLIENTE
     "user": {
         "email": "exemplo@mail.com",
         "name": "Exemplo",
-        "city": "Rio de Janeiro - RJ",
+        "state": "RJ",
+        "city": "Rio de Janeiro",
         "age": 18,
         "phone": "(21) 91234-5678",
         "type": "cliente",
@@ -147,15 +148,14 @@ TYPE: PRESTADOR
 	"user": {
 		"email": "prestador@mail.com",
 		"name": "Prestador",
+        "state": "RJ",
 	    "workOnCities": [
-		    "Rio de Janeiro - RJ",
-		    "Angra dos Reis - RJ",
-		    "Cabo Frio - RJ"
+		    "Rio de Janeiro",
+		    "Angra dos Reis",
+		    "Cabo Frio"
 	    ],
         "workOnCategories": [
-            "Estrutural - Telhado",
-            "Elétrica",
-            "Hidráulica - Piscina"
+            "Telhado",
         ],
 	    "age": 50,
         "phone": "(21) 91234-5678",
@@ -194,7 +194,8 @@ TYPE: CLIENTE
     "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
     "name": "Exemplo",
     "age": 18,
-    "city": "Rio de Janeiro - RJ",
+    "state": "RJ",
+    "city": "Rio de Janeiro",
     "phone": "(21) 91234-5678",
     "id": 1,
     "type": "cliente",
@@ -209,15 +210,14 @@ TYPE: PRESTADOR
 	"email": "prestador@mail.com",
 	"password": "$2a$10$SBA9MkdYOaGBMFy9iahgA.rjPnQOQynWeHjbMvxzxDDR/Ritsjs/u",
 	"name": "Prestador",
+    "state": "RJ",
 	"workOnCities": [
-		"Rio de Janeiro - RJ",
-		"Angra dos Reis - RJ",
-		"Cabo Frio - RJ"
+		"Rio de Janeiro",
+		"Angra dos Reis",
+		"Cabo Frio"
 	],
     "workOnCategories": [
-        "Estrutural - Telhado",
-        "Elétrica",
-        "Hidráulica - Piscina"
+        "Telhado",
     ],
 	"age": 50,
     "phone": "(21) 91234-5678",
@@ -248,7 +248,8 @@ RESPOSTA DA API - STATUS 200
 		"name": "Troca de caixa de fusíveis",
 		"type": "Elétrica",
 		"description": "Substituição da caixa e fiação dos fusíveis da casa",
-        "serviceCity": "Rio de Janeiro - RJ"
+        "serviceState": "RJ"
+        "serviceCity": "Rio de Janeiro"
 		"userId": 1,
 		"providerId": 2,
         "avatar_URL": "https://imagemDeExemplo.jpg"
@@ -275,10 +276,39 @@ RESPOSTA DA API - STATUS 200
 		"name": "Conserto de Telhado",
 		"type": "Estrutural",
 		"description": "Substituição de telhas quebradas",
-        "serviceCity": "Rio de Janeiro - RJ"
+        "serviceState": "RJ",
+        "serviceCity": "Rio de Janeiro"
 		"userId": 1,
 		"providerId": 2,
         "avatar_URL": "https://imagemDeExemplo.jpg"
+	}
+]
+</pre>
+
+ERRO - STATUS 401 - SEM TOKEN DE ACESSO
+
+<pre>
+"Missing token"
+</pre>
+
+### Serviços Cancelados
+
+GET /canceledServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+
+RESPOSTA DA API - STATUS 200
+
+<pre>
+[
+	{
+		"id": 4,
+		"name": "Cozinha Planejada",
+		"type": "Marceneiro",
+		"description": "Planejamento e execução de cozinha planejada",
+		"serviceCity": "São Paulo",
+		"serviceState": "SP",
+		"userId": 3,
+		"providerId": 2,
+		"createdAt": "2023-01-05T20:53:30-03:00"
 	}
 ]
 </pre>

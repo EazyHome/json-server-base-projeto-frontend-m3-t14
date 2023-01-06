@@ -19,11 +19,7 @@
       "state": "SP",
       "phone": "(11) 91234-5678",
       "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
-      "workOnCategories": [
-        "Estrutural - Telhado",
-        "Elétrica",
-        "Hidráulica - Piscina"
-      ],
+      "workOnCategories": ["Telhado", "Eletricista", "Piscina"],
       "age": 52,
       "ratings": [],
       "type": "prestador",
@@ -48,34 +44,50 @@
     {
       "id": 3,
       "name": "Conserto de Telhado",
-      "type": "Estrutural - Telhado",
+      "type": "Telhado",
       "description": "Substituição de telhas quebradas",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
       "userId": 1,
-      "providerId": 2
+      "providerId": 2,
+      "createdAt": "2023-01-05T20:51:00-03:00"
     }
   ],
   "doneServices": [
     {
       "id": 1,
       "name": "Troca de caixa de fusíveis",
-      "type": "Elétrica",
+      "type": "Eletricista",
       "description": "Substituição da caixa e fiação dos fusíveis da casa",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
       "userId": 1,
-      "providerId": 2
+      "providerId": 2,
+      "createdAt": "2023-01-05T20:51:11-03:00"
     },
     {
       "id": 2,
       "name": "Manutenção de bomba de piscina",
-      "type": "Hidráulica - Piscina",
+      "type": "Piscina",
       "description": "Manutenção e Limpeza de Bomba de Piscina",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
       "userId": 3,
-      "providerId": 2
+      "providerId": 2,
+      "createdAt": "2023-01-05T20:51:50-03:00"
+    }
+  ],
+  "canceledServices": [
+    {
+      "id": 4,
+      "name": "Cozinha Planejada",
+      "type": "Marceneiro",
+      "description": "Planejamento e execução de cozinha planejada",
+      "serviceCity": "São Paulo",
+      "serviceState": "SP",
+      "userId": 3,
+      "providerId": 2,
+      "createdAt": "2023-01-05T20:53:30-03:00"
     }
   ]
 }
