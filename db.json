@@ -18,8 +18,16 @@
       "name": "Prestador",
       "state": "SP",
       "phone": "(11) 91234-5678",
-      "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
-      "workOnCategories": ["Telhado", "Eletricista", "Piscina"],
+      "workOnCities": [
+        "São Paulo",
+        "Sorocaba",
+        "São José dos Campos"
+      ],
+      "workOnCategories": [
+        "Telhado",
+        "Eletricista",
+        "Piscina"
+      ],
       "age": 52,
       "ratings": [],
       "type": "prestador",
@@ -38,6 +46,28 @@
       "type": "cliente",
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg",
       "id": 3
+    },
+    {
+      "email": "prestadorrj@mail.com",
+      "password": "$2a$10$kcnWtnXHEcKdX9jdodC3l.2b5rk8EogMts6CY4bRCsQq5GDhxH/Ou",
+      "name": "PrestadorRJ",
+      "state": "RJ",
+      "phone": "(21) 91234-5678",
+      "workOnCities": [
+        "Rio de Janeiro",
+        "Cabo Frio"
+      ],
+      "workOnCategories": [
+        "Telhado",
+        "Eletricista",
+        "Piscina"
+      ],
+      "age": 45,
+      "ratings": [],
+      "type": "prestador",
+      "available": true,
+      "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg",
+      "id": 4
     }
   ],
   "activeServices": [
