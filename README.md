@@ -237,7 +237,7 @@ ERRO - STATUS 401 - SEM TOKEN DE ACESSO
 
 ### Serviços Finalizados
 
-GET /doneServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+GET /services?status=done - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
 
 RESPOSTA DA API - STATUS 200
 
@@ -250,9 +250,11 @@ RESPOSTA DA API - STATUS 200
 		"description": "Substituição da caixa e fiação dos fusíveis da casa",
         "serviceState": "RJ"
         "serviceCity": "Rio de Janeiro"
+        "status": "done",
+        "rating": 4,
 		"userId": 1,
 		"providerId": 2,
-        "avatar_URL": "https://imagemDeExemplo.jpg"
+        "createdAt": "2023-01-05T20:53:30-03:00"
 	}
 ]
 </pre>
@@ -265,7 +267,7 @@ ERRO - STATUS 401 - SEM TOKEN DE ACESSO
 
 ### Serviços Ativos
 
-GET /activeServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+GET /services?status=active - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
 
 RESPOSTA DA API - STATUS 200
 
@@ -278,9 +280,10 @@ RESPOSTA DA API - STATUS 200
 		"description": "Substituição de telhas quebradas",
         "serviceState": "RJ",
         "serviceCity": "Rio de Janeiro"
+        "status": "active",
 		"userId": 1,
 		"providerId": 2,
-        "avatar_URL": "https://imagemDeExemplo.jpg"
+        "createdAt": "2023-01-05T20:53:30-03:00"
 	}
 ]
 </pre>
@@ -293,7 +296,7 @@ ERRO - STATUS 401 - SEM TOKEN DE ACESSO
 
 ### Serviços Cancelados
 
-GET /canceledServices - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
+GET /services?status=canceled - SEM CORPO DE REQUISIÇÃO - NECESSÁRIA AUTENTICAÇÃO
 
 RESPOSTA DA API - STATUS 200
 
@@ -306,6 +309,7 @@ RESPOSTA DA API - STATUS 200
 		"description": "Planejamento e execução de cozinha planejada",
 		"serviceCity": "São Paulo",
 		"serviceState": "SP",
+        "status": "canceled",
 		"userId": 3,
 		"providerId": 2,
 		"createdAt": "2023-01-05T20:53:30-03:00"

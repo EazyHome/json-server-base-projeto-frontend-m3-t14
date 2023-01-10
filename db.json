@@ -18,16 +18,8 @@
       "name": "Prestador",
       "state": "SP",
       "phone": "(11) 91234-5678",
-      "workOnCities": [
-        "São Paulo",
-        "Sorocaba",
-        "São José dos Campos"
-      ],
-      "workOnCategories": [
-        "Telhado",
-        "Eletricista",
-        "Piscina"
-      ],
+      "workOnCities": ["São Paulo", "Sorocaba", "São José dos Campos"],
+      "workOnCategories": ["Telhado", "Eletricista", "Piscina"],
       "age": 52,
       "ratings": [],
       "type": "prestador",
@@ -53,15 +45,8 @@
       "name": "PrestadorRJ",
       "state": "RJ",
       "phone": "(21) 91234-5678",
-      "workOnCities": [
-        "Rio de Janeiro",
-        "Cabo Frio"
-      ],
-      "workOnCategories": [
-        "Telhado",
-        "Eletricista",
-        "Piscina"
-      ],
+      "workOnCities": ["Rio de Janeiro", "Cabo Frio"],
+      "workOnCategories": ["Telhado", "Eletricista", "Piscina"],
       "age": 45,
       "ratings": [],
       "type": "prestador",
@@ -70,7 +55,7 @@
       "id": 4
     }
   ],
-  "activeServices": [
+  "services": [
     {
       "id": 3,
       "name": "Conserto de Telhado",
@@ -78,12 +63,25 @@
       "description": "Substituição de telhas quebradas",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
+      "status": "done",
+      "rating": 4,
       "userId": 1,
       "providerId": 2,
-      "createdAt": "2023-01-05T20:51:00-03:00"
-    }
-  ],
-  "doneServices": [
+      "createdAt": "05/01/2023"
+    },
+    {
+      "name": "Conserto de Porta",
+      "type": "Marceneiro",
+      "description": "Substituição de porta",
+      "serviceCity": "Rio de Janeiro",
+      "serviceState": "RJ",
+      "status": "done",
+      "rating": 5,
+      "userId": 1,
+      "providerId": 4,
+      "createdAt": "10/01/2023",
+      "id": 4
+    },
     {
       "id": 1,
       "name": "Troca de caixa de fusíveis",
@@ -91,9 +89,10 @@
       "description": "Substituição da caixa e fiação dos fusíveis da casa",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
+      "status": "active",
       "userId": 1,
       "providerId": 2,
-      "createdAt": "2023-01-05T20:51:11-03:00"
+      "createdAt": "05/01/2023"
     },
     {
       "id": 2,
@@ -102,22 +101,22 @@
       "description": "Manutenção e Limpeza de Bomba de Piscina",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
+      "status": "active",
       "userId": 3,
       "providerId": 2,
-      "createdAt": "2023-01-05T20:51:50-03:00"
-    }
-  ],
-  "canceledServices": [
+      "createdAt": "05/01/2023"
+    },
     {
-      "id": 4,
+      "id": 5,
       "name": "Cozinha Planejada",
       "type": "Marceneiro",
       "description": "Planejamento e execução de cozinha planejada",
       "serviceCity": "São Paulo",
       "serviceState": "SP",
+      "status": "canceled",
       "userId": 3,
       "providerId": 2,
-      "createdAt": "2023-01-05T20:53:30-03:00"
+      "createdAt": "05/01/2023"
     }
   ]
 }
