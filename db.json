@@ -58,7 +58,6 @@
   "services": [
     {
       "id": 3,
-      "name": "Conserto de Telhado",
       "type": "Telhado",
       "description": "Substituição de telhas quebradas",
       "serviceCity": "São Paulo",
@@ -70,7 +69,6 @@
       "createdAt": "05/01/2023"
     },
     {
-      "name": "Conserto de Porta",
       "type": "Marceneiro",
       "description": "Substituição de porta",
       "serviceCity": "Rio de Janeiro",
@@ -84,7 +82,6 @@
     },
     {
       "id": 1,
-      "name": "Troca de caixa de fusíveis",
       "type": "Eletricista",
       "description": "Substituição da caixa e fiação dos fusíveis da casa",
       "serviceCity": "São Paulo",
@@ -96,7 +93,6 @@
     },
     {
       "id": 2,
-      "name": "Manutenção de bomba de piscina",
       "type": "Piscina",
       "description": "Manutenção e Limpeza de Bomba de Piscina",
       "serviceCity": "São Paulo",
@@ -108,7 +104,6 @@
     },
     {
       "id": 5,
-      "name": "Cozinha Planejada",
       "type": "Marceneiro",
       "description": "Planejamento e execução de cozinha planejada",
       "serviceCity": "São Paulo",
