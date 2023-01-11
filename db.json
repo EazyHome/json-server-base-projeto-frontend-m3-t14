@@ -98,7 +98,7 @@
       "serviceCity": "São Paulo",
       "serviceState": "SP",
       "status": "active",
-      "userId": 3,
+      "userId": 1,
       "providerId": 2,
       "createdAt": "05/01/2023"
     },
@@ -109,7 +109,7 @@
       "serviceCity": "São Paulo",
       "serviceState": "SP",
       "status": "canceled",
-      "userId": 3,
+      "userId": 1,
       "providerId": 2,
       "createdAt": "05/01/2023"
     }
