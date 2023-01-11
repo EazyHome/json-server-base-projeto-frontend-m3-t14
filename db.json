@@ -50,7 +50,7 @@
       "age": 45,
       "ratings": [3, 3, 4],
       "type": "prestador",
-      "available": false,
+      "available": true,
       "avatar_URL": "https://i.pinimg.com/564x/5b/f5/d9/5bf5d9b538bc0fadd3bbd11bbfc74c9a.jpg",
       "id": 4
     }
