@@ -4,7 +4,7 @@ Esta é a API da EazyHome. O objetivo da aplicação é conectar clientes e pres
 
 ## Endpoints
 
-A API tem 6 Endpoints, podendo cadastrar usuários, realizar login, acessar o perfil do usuário, seja ele cliente ou prestador, além de acessar os serviços já prestados ou em prestação.
+A API tem 4 Endpoints, podendo cadastrar usuários, realizar login, acessar o perfil do usuário, seja ele cliente ou prestador, além de acessar os serviços já prestados ou em prestação.
 
 ### Cadastro
 
@@ -25,7 +25,6 @@ TYPE: CLIENTE
     "age": 18,
     "phone": "(21) 91234-5678",
     "type": "cliente",
-    "avatar_URL": "https://imagemDeExemplo.jpg"
 }
 </pre>
 
@@ -48,7 +47,6 @@ TYPE: PRESTADOR
         "phone": "(21) 91234-5678",
 		"type": "prestador",
         "available": true,
-        "avatar_URL": "https://imagemDeExemplo.jpg"
 	}
 }
 </pre>
@@ -245,7 +243,6 @@ RESPOSTA DA API - STATUS 200
 [
 	{
 		"id": 1,
-		"name": "Troca de caixa de fusíveis",
 		"type": "Elétrica",
 		"description": "Substituição da caixa e fiação dos fusíveis da casa",
         "serviceState": "RJ"
@@ -275,7 +272,6 @@ RESPOSTA DA API - STATUS 200
 [
 	{
 		"id": 2,
-		"name": "Conserto de Telhado",
 		"type": "Estrutural",
 		"description": "Substituição de telhas quebradas",
         "serviceState": "RJ",
@@ -304,7 +300,6 @@ RESPOSTA DA API - STATUS 200
 [
 	{
 		"id": 4,
-		"name": "Cozinha Planejada",
 		"type": "Marceneiro",
 		"description": "Planejamento e execução de cozinha planejada",
 		"serviceCity": "São Paulo",
