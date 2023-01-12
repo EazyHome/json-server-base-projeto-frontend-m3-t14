@@ -1,6 +1,4 @@
 {
   "users": 640,
-  "activeServices": 640,
-  "doneServices": 640,
-  "canceledServices": 640
+  "services": 660
 }
